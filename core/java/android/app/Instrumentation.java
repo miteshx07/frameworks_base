@@ -1355,6 +1355,7 @@ public class Instrumentation {
                 .instantiateApplication(cl, className);
         app.attach(context);
         PixelPropsUtils.setProps(context);
+        PropImitationHooks.setProps(context);
         return app;
     }
     
@@ -1373,6 +1374,7 @@ public class Instrumentation {
         Application app = (Application)clazz.newInstance();
         app.attach(context);
         PixelPropsUtils.setProps(context);
+        PropImitationHooks.setProps(context);
         return app;
     }
 
