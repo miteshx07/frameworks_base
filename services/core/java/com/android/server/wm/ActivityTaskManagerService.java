@@ -2003,7 +2003,9 @@ public class ActivityTaskManagerService extends IActivityTaskManager.Stub {
 
     @Override
     public RootTaskInfo getFocusedRootTaskInfo() throws RemoteException {
-        enforceTaskPermission("getFocusedRootTaskInfo()");
+                if (!PropImitationHooks.shouldBypassTaskPermission(mContext)) {
+            enforceTaskPermission("getFocusedRootTaskInfo()");
+                }
         final long ident = Binder.clearCallingIdentity();
         try {
             synchronized (mGlobalLock) {
