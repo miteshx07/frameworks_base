@@ -17,7 +17,7 @@
 package android.security.keystore2;
 
 import static android.security.keystore2.AndroidKeyStoreCipherSpiBase.DEFAULT_MGF1_DIGEST;
-
+import com.android.internal.util.sakura.PropImitationHooks;
 import android.annotation.NonNull;
 import android.hardware.biometrics.BiometricManager;
 import android.hardware.security.keymint.EcCurve;
