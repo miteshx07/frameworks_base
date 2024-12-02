@@ -126,7 +126,7 @@ import com.android.internal.annotations.GuardedBy;
 import com.android.internal.annotations.Immutable;
 import com.android.internal.annotations.VisibleForTesting;
 import com.android.internal.os.SomeArgs;
-import com.android.internal.util.clover.PropImitationHooks;
+import com.android.internal.util.sakura.PropImitationHooks;
 import com.android.internal.util.UserIcons;
 
 import com.nvidia.NvAppProfileService;
