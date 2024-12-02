@@ -931,7 +931,8 @@ public class ApplicationPackageManager extends PackageManager {
         }
         if (Arrays.asList(featuresPixel).contains(name)) return true;
         if (Arrays.asList(featuresPixelOthers).contains(name)) return true;
-        return mHasSystemFeatureCache.query(new HasSystemFeatureQuery(name, version));
+        return PropImitationHooks.hasSystemFeature(name,
+                mHasSystemFeatureCache.query(new HasSystemFeatureQuery(name, version)));
     }
 
     /** @hide */
