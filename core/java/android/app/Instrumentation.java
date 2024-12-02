@@ -62,6 +62,7 @@ import android.view.Window;
 import android.view.WindowManagerGlobal;
 
 import com.android.internal.content.ReferrerIntent;
+import com.android.internal.util.clover.PropImitationHooks;
 
 import java.io.File;
 import java.lang.annotation.Retention;
